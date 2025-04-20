@@ -1,0 +1,111 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Home Page Styles */
+body.home {
+  background: url('https://images.unsplash.com/photo-1498633843672-064f1f3178f6?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg4M3wwfDF8c2VhcmNofDJ8fGJhY2tncm91bmR8ZW58MHx8fHwxNjE1MTg4NzE2&ixlib=rb-1.2.1&q=80&w=400') no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff6b81;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff4757;
+}
+
+/* Game Page Styles */
+body.game {
+  background: url('https://images.unsplash.com/photo-1532565627690-bb271f3f4ec3?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg4M3wwfDF8c2VhcmNofDJ8fGFnZWxlc3xlbnwwfHx8fDE2MTUxODU2Mjg&ixlib=rb-1.2.1&q=80&w=400') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container h1 {
+  font-size: 28px;
+}
+
+.container p {
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ff6b81;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff4757;
+}
+
+#options button {
+  margin-top: 20px;
+}
+
+/* Pastikan tombol selalu berada di tengah */
+#submitGuess, #playAgain {
+  display: block;
+  margin: 20px auto;
+}

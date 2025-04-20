@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tebak Angka - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+  <div class="wrapper">
+    <div class="container">
+      <h1>Tebak Angka 🎯</h1>
+      <p>Selamat datang! Siap bermain dan menebak angka?</p>
+      <button onclick="startGame()" class="btn">Mulai Game</button>
+    </div>
+  </div>
+
+  <script>
+    function startGame() {
+      localStorage.setItem('gameStarted', 'true');
+      window.location.href = 'game.html';
+    }
+  </script>
+</body>
+</html>

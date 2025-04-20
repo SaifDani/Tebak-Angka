@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Game - Tebak Angka</title>
+
+  <!-- Cek apakah game sudah dimulai -->
+  <script>
+    window.onload = function () {
+      const gameStarted = localStorage.getItem('gameStarted');
+      if (!gameStarted) {
+        window.location.href = 'index.html'; // Kalau belum, arahkan ke halaman utama
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="game">
+  <div class="wrapper">
+    <div class="container">
+      <h1>Tebak Angka 🎯</h1>
+      <p id="question">Coba Tebak Angkanya! (1-100)</p>
+      <p>Nyawa: <span id="lives">5</span></p>
+      <p>Skor: <span id="score">0</span></p>
+
+      <input type="number" id="guess" placeholder="Masukkan angka" min="1" max="100">
+      <button id="submitGuess" class="btn">Tebak</button>
+
+      <div id="result"></div>
+
+      <div id="options" style="display: none;">
+        <button id="playAgain" class="btn">Lanjut</button>
+        <button id="home" class="btn" onclick="goHome()">Ke Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goHome() {
+      localStorage.removeItem('gameStarted'); // Reset status saat kembali ke home
+      window.location.href = 'index.html';
+    }
+  </script>
+
+  <script src="gamescript.js"></script>
+</body>
+</html>
